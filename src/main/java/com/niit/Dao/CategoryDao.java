@@ -12,4 +12,3 @@ public interface CategoryDao {
 	    public Category getCategory(int catId);
 	    public boolean updateCategory(Category category);
 	}
-

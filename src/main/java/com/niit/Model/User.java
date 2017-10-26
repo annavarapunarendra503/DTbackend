@@ -22,7 +22,17 @@ public class User
 		private String phone;
 		private String role;
 		private String Address;
+		private String username;
 	    private boolean enabled;
+		
+		   public String getUsername() {
+				return username;
+			}
+
+			public void setUsername(String username) {
+				this.username = username;
+			}
+
 
 		public String getAddress() {
 			return Address;

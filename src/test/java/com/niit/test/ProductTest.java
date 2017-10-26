@@ -1,4 +1,4 @@
-/*package com.niit.test;
+package com.niit.test;
 
 
 import static org.junit.Assert.*;
@@ -29,12 +29,12 @@ public class ProductTest {
 		{
 			 Product product= new Product();
 			 product.setProductId(1001);
-			 product.setProductName("sa");
+			 product.setProductName("satti");
 			 product.setProductDesc("this");
 			 product.setPrice(2000);
 			 product.setStock(25);
 			 product.setCatId(1001);
-			 product.setSupplierId(1001);
+			 product.setSupId(1001);
 			 assertTrue("problem in insertion",productDAO.addProduct(product));
 		}
-}*/
+}

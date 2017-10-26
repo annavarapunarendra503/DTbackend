@@ -31,7 +31,7 @@ public class SupplierDaoImpl implements SupplierDao
 		try
 		{
 		Session session=sessionFactory.getCurrentSession();
-		session.save(supplier);
+		session.saveOrUpdate(supplier);
 		return true;
 		}
 		catch(Exception e)
@@ -74,6 +74,7 @@ public class SupplierDaoImpl implements SupplierDao
 		Supplier supplier=(Supplier)session.get(Supplier.class,supId);
 		session.close();
 		return supplier;
+		
 	}
 
 	@Transactional
