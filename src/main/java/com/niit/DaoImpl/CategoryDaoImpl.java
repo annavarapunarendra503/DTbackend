@@ -68,6 +68,7 @@ public boolean addCategory(Category category)
      return false;
      }	
  }
+@Transactional
 public Category getCategory(int catId) {
 	
 	 Session session=sessionFactory.openSession();

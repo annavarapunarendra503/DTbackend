@@ -81,7 +81,7 @@ public class ProductDaoImpl implements ProductDao
 	}
     @Transactional
 	public Product getProduct(int productId) {
-		// TODO Auto-generated method stub
+		
 		String hql = "from"+" Product"+" where id=" + productId;
 		@SuppressWarnings("rawtypes")
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);

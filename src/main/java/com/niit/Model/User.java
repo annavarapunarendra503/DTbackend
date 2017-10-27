@@ -11,19 +11,22 @@ import org.springframework.stereotype.Component;
 @Component
 public class User
 {
+	
+	private static final long serialVersionUID = -5294671367987983736L;
+	
         @Id
 		@GeneratedValue
 		private int id;
 
-		private String firstName;
-		private String lastName;
+		
+		
+		private String username;
 		private String email;
 		private String password;
-		private String phone;
+		private String contact;
 		private String role;
 		private String Address;
-		private String username;
-	    private boolean enabled;
+		private boolean enabled;
 		
 		   public String getUsername() {
 				return username;
@@ -43,21 +46,6 @@ public class User
 		}
 		
 	
-		public String getFirstName() {
-			return firstName;
-		}
-
-		public void setFirstName(String firstName) {
-			this.firstName = firstName;
-		}
-
-		public String getLastName() {
-			return lastName;
-		}
-
-		public void setLastName(String lastName) {
-			this.lastName = lastName;
-		}
 
 		public int getId() {
 			return  id;
@@ -84,12 +72,14 @@ public class User
 			this.password = password;
 		}
 
-		public String getPhone() {
-			return phone;
+		
+
+		public String getContact() {
+			return contact;
 		}
 
-		public void setPhone(String phone) {
-			this.phone = phone;
+		public void setContact(String contact) {
+			this.contact = contact;
 		}
 
 		public String getRole() {
