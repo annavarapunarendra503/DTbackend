@@ -14,10 +14,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.util.Properties;
 
+import com.niit.Dao.CartDao;
 import com.niit.Dao.CategoryDao;
 import com.niit.Dao.ProductDao;
 import com.niit.Dao.SupplierDao;
 import com.niit.Dao.UserDao;
+import com.niit.DaoImpl.CartDaoImpl;
 import com.niit.DaoImpl.CategoryDaoImpl;
 import com.niit.DaoImpl.ProductDaoImpl;
 import com.niit.DaoImpl.SupplierDaoImpl;
@@ -75,7 +77,7 @@ public class DBConfig
 		
 		@Autowired
 		@Bean(name = "categoryDao")
-		public CategoryDao geCateoryDao(SessionFactory sessionFactory)
+		public CategoryDao getCateoryDao(SessionFactory sessionFactory)
 		{
 	        return new CategoryDaoImpl(sessionFactory);
 		}
@@ -105,6 +107,14 @@ public class DBConfig
 	{
 
 		return new ProductDaoImpl(sessionFactory);
+	}
+	
+	@Autowired
+	@Bean(name = "cartDao")
+	public CartDao getCartDao(SessionFactory sessionFactory)
+	{
+
+		return new CartDaoImpl(sessionFactory);
 	}
 
 	

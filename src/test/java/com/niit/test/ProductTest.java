@@ -12,7 +12,7 @@ import com.niit.Model.Product;
 
 public class ProductTest {
 
-	private static ProductDao productDAO;
+	private static ProductDao productDao;
 		@BeforeClass
 		public static void initialize()
 		{
@@ -20,7 +20,7 @@ public class ProductTest {
 			ConfigAppLnContext.scan("com.");
 			ConfigAppLnContext.refresh();
 			//SessionFactory sessionFactory=(Conf.getBean(requiredType, args))
-			productDAO=(ProductDao)ConfigAppLnContext.getBean("productDAO");
+			productDao=(ProductDao)ConfigAppLnContext.getBean("productDao");
 
 		}
 		@Transactional
@@ -35,6 +35,6 @@ public class ProductTest {
 			 product.setStock(25);
 			 product.setCatId(1001);
 			 product.setSupId(1001);
-			 assertTrue("problem in insertion",productDAO.addProduct(product));
+			 assertTrue("problem in insertion",productDao.addProduct(product));
 		}
 }
