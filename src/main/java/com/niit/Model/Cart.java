@@ -11,11 +11,20 @@ public class Cart
 	@Id
 	int cartId;
 	private int productId,userId,price,productQuantity;
+	//@OneToOne(fetch=FetchType.LAZY)
+	//@JoinColumn(name="Useremail")
+	//private User CartUserDetails;
 	private double subTotal;
 	
 	public int getCartId() {
 		return cartId;
 	}
+	//public User getCartUserDetails() {
+		//return CartUserDetails;
+	//}
+	//public void setCartUserDetails(User cartUserDetails) {
+		//CartUserDetails = cartUserDetails;
+	//}
 	public void setCartId(int cartId) {
 		this.cartId = cartId;
 	}

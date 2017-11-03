@@ -40,17 +40,17 @@ public class UserDaoImpl implements UserDao {
 		}
 
 		public List<User> list() {
-			// TODO Auto-generated method stub
+			
 			return null;
 		}
 
 		public User getUserById(int user_id) {
-			// TODO Auto-generated method stub
+			
 			return null;
 		}
 
 		public void removeUserById(int user_id) {
-			// TODO Auto-generated method stub
+			
 			
 		}
        @Transactional
