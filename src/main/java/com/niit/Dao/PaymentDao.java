@@ -7,7 +7,6 @@ import com.niit.Model.Payment;
 public interface PaymentDao {
 
 
-
 	public boolean savePaymentInfo(Payment payment);
 
 	public Payment getPaymentInfo(int paymentId);

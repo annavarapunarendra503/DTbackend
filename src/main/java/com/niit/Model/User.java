@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class User
 {
-	
+
 	private static final long serialVersionUID = -5294671367987983736L;
 	
         @Id

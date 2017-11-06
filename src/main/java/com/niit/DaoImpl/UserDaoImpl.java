@@ -20,7 +20,6 @@ import com.niit.Model.User;
 public class UserDaoImpl implements UserDao {
 	
 	
-
 	public UserDaoImpl() {}
 	
 	    @Autowired

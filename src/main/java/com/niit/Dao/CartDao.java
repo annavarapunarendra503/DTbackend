@@ -10,7 +10,7 @@ import com.niit.Model.Cart;
 public interface CartDao
 {
 	
-	
+
 	
 	public boolean saveProductToCart(Cart cart);
 	

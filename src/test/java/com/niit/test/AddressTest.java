@@ -20,7 +20,7 @@ public class AddressTest {
 	@Autowired
 	private static AddressDao addressDao;
 	
-	
+
 	@BeforeClass
 	public static void initialize(){
 		

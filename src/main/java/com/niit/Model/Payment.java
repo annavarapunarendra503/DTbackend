@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Table
 @Component
 public class Payment {
-	
+
 	@Id
 	@GeneratedValue
 	private int id;

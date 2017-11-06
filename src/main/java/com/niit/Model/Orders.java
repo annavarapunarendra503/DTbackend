@@ -25,7 +25,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Orders {
 
-	
+
      @Id
 	private String orderId;
 	
