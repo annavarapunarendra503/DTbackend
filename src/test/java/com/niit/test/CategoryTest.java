@@ -23,6 +23,7 @@ import com.niit.Config.DBConfig;
 import com.niit.Dao.CategoryDao;
 import com.niit.Model.Category;
 
+@Ignore
 public class CategoryTest {
          @Autowired
 	    static CategoryDao categoryDao;

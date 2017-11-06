@@ -1,4 +1,4 @@
-/*package com.niit.test;
+package com.niit.test;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -15,6 +15,7 @@ import com.niit.Dao.SupplierDao;
 import com.niit.DaoImpl.SupplierDaoImpl;
 import com.niit.Model.Supplier;
 
+@Ignore
 public class SupplierTest {
 
 	static SupplierDao supplierDao;
@@ -92,4 +93,3 @@ public class SupplierTest {
 		        System.out.println("Supplier Name:"+supplier.getSupName());
 		    }
 }
-*/

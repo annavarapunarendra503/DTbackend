@@ -4,6 +4,9 @@ package com.niit.Model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 
 import org.springframework.stereotype.Component;
 
@@ -19,12 +22,20 @@ public class User
 		private int id;
 
 		
-		
+		@NotNull(message="please enter the username")
+		@Size(min=5,max=10)
 		private String username;
+		@NotNull(message="please enter the emaild")
 		private String email;
+		@NotNull(message="please enter the password")
+		@Size(min=5,max=10)
 		private String password;
+		@NotNull(message="please enter the contact details")
+		@Pattern(regexp="(^$|[0-9] {10})")
 		private String contact;
 		private String role;
+		@NotNull(message="please enter the password")
+		@Size(min=10,max=30)
 		private String Address;
 		private boolean enabled;
 		

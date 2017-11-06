@@ -14,11 +14,13 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.util.Properties;
 
+import com.niit.Dao.AddressDao;
 import com.niit.Dao.CartDao;
 import com.niit.Dao.CategoryDao;
 import com.niit.Dao.ProductDao;
 import com.niit.Dao.SupplierDao;
 import com.niit.Dao.UserDao;
+import com.niit.DaoImpl.AddressDaoImpl;
 import com.niit.DaoImpl.CartDaoImpl;
 import com.niit.DaoImpl.CategoryDaoImpl;
 import com.niit.DaoImpl.ProductDaoImpl;
@@ -115,6 +117,14 @@ public class DBConfig
 	{
 
 		return new CartDaoImpl(sessionFactory);
+	}
+	
+	@Autowired
+	@Bean(name = "addressDao")
+	public AddressDao getAddressDao(SessionFactory sessionFactory)
+	{
+
+		return new AddressDaoImpl(sessionFactory);
 	}
 
 	

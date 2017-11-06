@@ -3,6 +3,7 @@ package com.niit.test;
 
 import static org.junit.Assert.*;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.niit.Dao.ProductDao;
 import com.niit.Model.Product;
 
+@Ignore
 public class ProductTest {
 
 	private static ProductDao productDao;
