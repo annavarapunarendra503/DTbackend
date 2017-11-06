@@ -5,6 +5,7 @@ import java.util.List;
 import com.niit.Model.Category;
 
 public interface CategoryDao {
+	
 
         public boolean addCategory(Category category);
 	    public List<Category> retrieveCategory();

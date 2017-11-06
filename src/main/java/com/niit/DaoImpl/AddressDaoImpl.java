@@ -26,7 +26,7 @@ import com.niit.Model.Address;
 public class AddressDaoImpl implements AddressDao{
 
 	
-	
+
 	
 		//private static Logger log = LoggerFactory.getLogger(AddressDaoImpl.class);
 

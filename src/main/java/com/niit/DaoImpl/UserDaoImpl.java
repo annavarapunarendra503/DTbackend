@@ -19,6 +19,7 @@ import com.niit.Model.User;
 @Repository
 public class UserDaoImpl implements UserDao {
 	
+	
 
 	public UserDaoImpl() {}
 	

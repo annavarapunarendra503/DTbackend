@@ -20,7 +20,7 @@ import com.niit.Model.Orders;
 public class OrdersDaoImpl implements OrdersDao
 {
 
-	
+
 		//private static Logger log = LoggerFactory.getLogger(OrdersDaoImpl.class);
 		
 		@Autowired

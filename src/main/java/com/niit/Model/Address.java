@@ -20,6 +20,7 @@ import org.springframework.stereotype.Component;
 public class Address {
 	
 	
+	
 	       @Id
 			@GeneratedValue
 			private int id;
