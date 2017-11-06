@@ -15,7 +15,6 @@ import com.niit.Model.Address;
 public class AddressTest {
 
 
-	
 	@Autowired
 	private static Address address;
 	

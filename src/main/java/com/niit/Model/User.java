@@ -21,7 +21,6 @@ public class User
 		@GeneratedValue
 		private int id;
 
-		
 		@NotNull(message="please enter the username")
 		@Size(min=5,max=10)
 		private String username;

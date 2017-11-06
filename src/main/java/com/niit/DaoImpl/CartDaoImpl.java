@@ -24,7 +24,6 @@ public class CartDaoImpl implements CartDao
 		this.sessionFactory = sessionFactory;
 	}
 
-	
 
 	@Transactional
 	

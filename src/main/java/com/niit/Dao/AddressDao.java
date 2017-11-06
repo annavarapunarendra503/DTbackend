@@ -6,6 +6,7 @@ import com.niit.Model.Address;
 
 public interface AddressDao {
 	
+	
 		
 			public boolean saveOrUpdate(Address address);
 			
