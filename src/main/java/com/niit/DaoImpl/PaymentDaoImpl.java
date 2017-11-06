@@ -17,7 +17,6 @@ import com.niit.Model.Payment;
 public class PaymentDaoImpl implements PaymentDao{
 
 	
-
 	//private static Logger log = LoggerFactory.getLogger(PaymentDaoImpl.class);
 	
 	@Autowired

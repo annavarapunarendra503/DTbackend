@@ -25,7 +25,6 @@ public class CartDaoImpl implements CartDao
 	}
 
 
-
 	@Transactional
 	
 	public boolean saveProductToCart(Cart cart) {

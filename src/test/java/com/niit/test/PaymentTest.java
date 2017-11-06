@@ -16,6 +16,7 @@ import com.niit.Model.Payment;
 @Ignore
 public class PaymentTest {
 
+	
 
 		@Autowired
 		private static Payment payment;

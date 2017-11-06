@@ -7,7 +7,6 @@ import com.niit.Model.User;
 public interface UserDao {
 
 	
-
 	  public boolean saveUser(User user);
 	  public List<User> list();
 	  public User getUserById(int user_id);

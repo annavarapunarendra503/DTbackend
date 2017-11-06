@@ -10,7 +10,6 @@ public class Cart
 {
 
 
-
 	@GeneratedValue
 	@Id
 	int cartId;

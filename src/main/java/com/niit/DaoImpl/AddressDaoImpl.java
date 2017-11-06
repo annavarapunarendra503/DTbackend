@@ -27,7 +27,6 @@ public class AddressDaoImpl implements AddressDao{
 
 	
 
-
 		//private static Logger log = LoggerFactory.getLogger(AddressDaoImpl.class);
 
 		

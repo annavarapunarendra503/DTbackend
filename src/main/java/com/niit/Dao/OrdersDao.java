@@ -6,7 +6,7 @@ import com.niit.Model.Orders;
 
 public interface OrdersDao {
 	
-	
+
 		
 			public boolean saveOrUpdate(Orders order);
 			
